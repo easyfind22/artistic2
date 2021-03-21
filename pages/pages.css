@@ -1,0 +1,1634 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin&family=Pompiere&family=Tangerine:wght@700&display=swap');
+
+html, body
+{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: var(--body);
+    position: relative;
+    margin:auto;
+    min-width:600px;
+    width: 1270px;
+}
+
+:root
+{
+    /* theme colors */
+    --body:#E8E8E8;
+    --heading:#393E46;
+    --navlinks:#707070;
+    --heart:#FF577F;
+    --login:#002E31;      /*(add your work button and cart also) */
+    --explorebtn:#87D9EC;
+    --circle1:#495464;
+    --circle2:#BBBFCA;
+    --circle3:#E8E8E8;
+    --rectangle:#061031;
+    --box1:#1CC5DB;
+    --box2:#CCF2F4;
+    --box3:#F4F9F9;
+    --landscape:#90A5B1;
+    --potrait:#BBBBBB;
+    --black:#000000;
+    --white:#FFFFFF;
+}
+
+/* -----------------------------------------------navigation -----------------------------------------------*/
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background: url(../images/artistic-image.png);
+     height: 6.5rem;
+    margin-top: -1rem;
+}
+.logo
+{
+    font-family: 'Tangerine', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    z-index: 1;
+    opacity: 1;
+    animation: scale 1s forwards;
+    
+   
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 2rem;
+    z-index: 1;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Cabin', sans-serif;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+.home a:hover
+{
+    color: var(--box1);
+}
+.about a:hover
+{
+    color: var(--box1);
+}
+.contact a:hover
+{
+    color: var(--box1);
+}
+.artist a:hover
+{
+    color: var(--box1);
+}
+
+ .heart1 a {
+   color: var(--heart);
+   font-size: 1.6rem;
+   
+}
+.heart:hover
+{
+    font-size: 2rem;
+    color: var(--box1);
+}
+.cart
+{
+    font-size: 1.6rem;
+}
+.cart a:hover
+{
+    color: var(--box1);
+}
+.login a:hover
+{
+    color: var(--box1);
+}
+.bar
+{
+    position: absolute;
+    right: 5%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--rectangle);
+   font-size:2rem;
+   z-index:1500;
+}
+.wishlist1
+{
+    position: absolute;
+    right: 18.5%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--heart);
+   font-size:2rem;
+    /* z-index: 1; */
+}
+.wishlist1:hover
+{
+    color: var(--box1);
+}
+.cart1
+{
+    position: absolute;
+    right: 11%;
+    top: 0.3%;
+   display: inline-block;
+   color:var(--rectangle);
+   font-size:2rem;
+   z-index:1500;
+}
+.burger
+{
+    display: none;
+    cursor: pointer;
+}
+.wishlist
+{
+    display: none;
+    cursor: pointer;
+}
+.shopping
+{
+    display: none;
+    cursor: pointer;
+}
+.heart1:hover
+{
+    color: var(--heart);
+}
+.active
+{
+    color: var(--box1);
+}
+/*---------------------------------------------- navigation ---------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------- --------------------footer -----------------------------------------------------------*/
+
+.footer2
+{
+    background: url(../images/footer-image.png);
+    width: 100%;
+    height: 400px;
+    margin-top: 40%;
+}
+.entire
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.icons
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 2%;
+    font-size: 2rem;
+    color: #00EEFF;
+    
+    
+}
+
+.linkedin
+{
+    margin-bottom: 1rem;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 14.5s;
+}
+.linkedin:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.facebook
+{
+    margin-bottom: 1rem;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 15s;
+}
+.facebook:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.instagram
+{
+    margin-bottom: 1rem;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 15.5s;
+}
+.instagram:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.twitter
+{
+    margin-bottom: 1rem;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 16s;
+}
+.twitter:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.mail
+{
+    margin-bottom: 1rem;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 16.5s;
+}
+.mail:hover
+{
+    font-size: 2.5rem;
+    color: var(--white);
+}
+.name2
+{
+    position: absolute;
+    font-family: 'Tangerine', cursive;
+    color: var(--box1);
+    font-size: 6rem;
+    margin-top: 8%;
+    margin-left: -5.5%;
+    animation: scale 1s forwards;
+    animation-delay: 14.5s;
+}
+.Grey
+{
+    position: absolute;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 15%;
+    opacity: 0.7;   
+    margin-left: -8%;
+    animation: fadeUp 1s forwards;
+    animation-delay: 14.5s;
+}
+li
+{
+    list-style: none;
+}
+.meetfeedback a
+{
+    
+    font-size: 1.1rem;
+    color: var(--explorebtn);
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    margin-left: -13%;
+    margin-top: 10%;
+}
+.meet a
+{
+ position: absolute;
+ margin-top: 25%;
+ animation: navLinkFade 1s forwards;
+ animation-delay: 14.5s;
+}
+.feedback a
+{
+    position: absolute;
+    margin-top: 30%;
+    animation: navLinkFade 1s forwards;
+ animation-delay: 15.5s;
+}
+.Center
+{
+   margin-left: 9%;
+}
+.meet a:hover
+{
+    color: var(--white);
+}
+.feedback a:hover
+{
+    color: var(--white);
+}
+/*---------------x---------------------------------- footer --------------------------------x------------------*/
+
+
+
+
+
+
+
+/* -------------------------------------------------contact.html ------------------------------------------------*/
+.main
+{
+    margin-bottom: -20%;
+}
+.contact-rectangle
+{
+    position: center;
+    height: 750px;
+    width: 700px;
+    background-color: var(--rectangle);
+    box-shadow: -3px 5px 25px gray;
+    margin-left:22%;
+    margin-top: 10%;
+    border: 7px solid var(--explorebtn);
+}
+
+.content
+{
+    margin-top: -68%;
+    text-align: center;
+    margin-left: 32%;
+}
+
+.contact-us
+{
+    font-size: 3.5rem;
+    margin-left: -50%;
+    margin-top: 18%;
+    padding-bottom: 0.2rem;
+    color: var(--white);
+    filter: drop-shadow(1px 1px 1px gray);
+    cursor: pointer;
+    font-family: 'tangerine',cursive;
+    font-weight: bolder;
+    animation: fadeup 1s forwards;
+}
+.main-content
+{
+   
+    font-size: 2rem;
+    color: var(--box3);
+    font-family: 'Pompiere', cursive;
+    font-weight:bold;
+    margin-left: -45%;
+    margin-top: -5%;
+   
+}
+.gmail
+{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    color: var(--box1);
+    animation: scale 1s forwards;
+    animation-delay: 1s;
+}
+.gmail:hover
+{
+  font-size: 5rem;    
+  color: var(--explorebtn);
+}
+
+.contact1
+{
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+.contact1:hover{
+    font-style: italic;
+    color: var(--circle2);
+}
+.call
+{
+    font-size: 3rem;
+    color: var(--box1);
+    margin-top: 2rem;
+    animation: scale 1s forwards;
+    animation-delay: 2s;
+}
+
+.call:hover
+{
+  font-size: 4rem;    
+  color: var(--explorebtn);
+}
+.number
+  {
+   color: var(--box3);
+    font-size: 2rem;
+   letter-spacing: .1rem;
+   
+   cursor: pointer;
+  }
+ 
+  .number:hover
+  {
+    font-style: italic;
+    color: var(--circle2);
+  }
+  .social-icons
+  {
+     letter-spacing: 1rem;
+     text-align: center;
+     margin-top: 3rem;
+     color: var(--box1);
+     font-size: 3rem;
+     margin-left: 2rem;
+     animation: navLinkFade1 1s forwards;
+     animation-delay: 3.5s;
+  }
+
+  .social-icons:hover
+  {
+      font-size: 4rem;
+      color: var(--explorebtn);
+  }
+/* -------------x-------------------------------contact.html----------------- -------------x-------------------*/
+
+
+
+
+
+
+/*------------------------------------------------ about us--------------------------------------------- -------*/
+
+.about-rectangle
+{
+    position: center;
+    height: 750px;
+    width: 700px;
+    background-color: var(--rectangle);
+    box-shadow: -3px 5px 25px gray;
+    margin-left:22%;
+    margin-top: 10%;
+    border: 7px solid var(--explorebtn);
+    margin-bottom: 20%;
+}
+.about-content
+{
+    margin-top:-60rem;
+    text-align: center;
+}
+.about-us
+{
+    
+    font-size: 3rem;
+    padding-bottom: 0.2rem;
+    color: var(--white);
+    filter: drop-shadow(1px 1px 1px gray);
+    cursor: pointer;
+    font-family: 'tangerine', cursive;
+    font-weight: bold;
+    animation: fadeUp 1s forwards;
+
+}
+.about-main-content
+{
+    font-size: 2rem;
+    color: var(--circle2);
+    font-family: 'Pompiere', cursive;
+    font-weight:bold;
+    animation: fadeUp 1s forwards;
+    animation-delay: 2s;
+}
+/*-------------------------------------------------------------- about us------------------------------------- */
+
+
+
+
+
+
+
+
+/*------------------------------------------------------ login.html------------------------------ ---------------*/
+
+
+.rectangle-behind
+{
+    background-color: var(--rectangle);
+    width: 100%;
+    height: 580px;
+    position: relative;
+}
+
+.login1
+{
+    position: absolute;
+    width: 92%;
+    height: 520px;
+    justify-content: center;
+    margin-left:4% ;
+    margin-top: 2.3%;
+    border-radius: 20px;
+    -moz-box-shadow:    0 0 20px var(--circle2)  ;
+    -webkit-box-shadow:  0 0 20px  var(--circle2);
+    box-shadow:          0 0 20px  var(--circle2);
+    z-index: 0;
+}
+
+.rectangle-white
+{
+    position: absolute;
+    background-color: var(--white);
+    height: 450px;
+    width: 40%;
+    z-index: 1;
+    margin-top: 5%;
+    margin-left: 35%;
+    -moz-box-shadow:    0 0 20px var(--circle2)  ;
+    -webkit-box-shadow:  0 0 20px  var(--circle2);
+    box-shadow:          0 0 20px  var(--circle2);
+   text-align: center;
+}
+.rectangle-white span:nth-child(1)
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: linear-gradient(to right, transparent, var(--box1) );
+   animation: animate1 4s linear infinite;
+   animation-delay: 1s;
+}
+.rectangle-white span:nth-child(2)
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 3px;
+   height: 100%;
+   background: linear-gradient(to right, transparent, var(--box1) );
+   animation: animate2 4s linear infinite;
+   animation-delay: 1s;
+}
+.rectangle-white span:nth-child(3)
+{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: linear-gradient(to right, transparent, var(--box1) );
+   animation: animate3 4s linear infinite;
+   animation-delay: 1s;
+}
+.rectangle-white span:nth-child(4)
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 3px;
+   height: 100%;
+   background: linear-gradient(to top, transparent, var(--box1) );
+   animation: animate4 4s linear infinite;
+   animation-delay: 1s;
+}
+.login-heading
+{
+    font-size: 6rem;
+    margin-top: 5%;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    text-shadow: 10px 10px 8px gray;
+    animation: fadeUp 1s forwards;
+}
+ul{
+    list-style-type: none;
+}
+.Title1
+{
+    position: absolute;
+    margin-left: -2%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--circle1);
+    margin-top: 2%;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 2s;
+    
+}
+.Title2
+{
+    position: absolute;
+    margin-left: -2%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--circle1);
+    margin-top: 12%;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 2s;
+}
+.Title3
+{
+    position: absolute;
+    margin-left: -2%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--circle1);
+    margin-top: -8%;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 2s;
+}
+input{
+    text-align: center;
+    font-style: italic;
+    color: var(--circle1);
+    font-weight: bold;
+    float: none;
+    width: 60%;
+    border-radius: 15px;
+    height: 30px;
+    border-width: 0;
+    background-color: #E4E4E4;
+    box-shadow: 5px 5px 5px #AAAAAA;
+    outline: none;
+    animation: navLinkFade 1s forwards ;
+    animation-delay: 2s;
+}
+input:focus{
+    box-shadow: 5px 5px 25px var(--box1) ;
+}
+.text1
+{
+    position: absolute;
+   margin-top: -8%;
+   margin-left: -22%;
+   animation: navLinkFade 1s forwards ;
+   animation-delay: 2s;
+}
+.text2
+{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: -22%;
+    animation: navLinkFade 1s forwards ;
+    animation-delay: 2s;
+}
+.text3
+{
+    position: absolute;
+    margin-top: -18%;
+    margin-left: -22%;
+    animation: navLinkFade 1s forwards ;
+    animation-delay: 2s;
+}
+.login-button
+{
+    background-color: var(--box1);
+    width: 150px;
+    height: 45px;
+    border: none;
+    margin-top: 16%;
+    border-radius: 20px;
+}
+.login-button a
+{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    color: var(--black);
+}
+.login-button:hover
+{
+    background: transparent;
+    border: 7px solid var(--box1);
+}
+.Not_Registered
+{
+    position: absolute;
+    margin-left: -60%;
+    margin-top: -13%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--circle1);
+   font-style: italic;
+   animation: navLinkFade1 1s forwards;
+   animation-delay: 3s;
+}
+.Register
+{
+    position: absolute;
+    background-color: var(--rectangle);
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    margin-left: -110%;
+    margin-top: -9%;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 3s;
+  
+}
+.Register a
+{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bolder;
+    color: var(--white);
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 3s;
+  
+}
+/*---------------x----------- ------------------------login.html--------------x------------------------------- */
+
+
+
+
+
+
+/*---------------------------------------------------- meet our team --------------------------------------------*/
+.contact-logo1
+{
+    position: absolute;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: -31%;
+    margin-top: 8.5%;
+    animation: scale 1s forwards;
+}
+.contact-logo2
+{
+    position: absolute;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: -31%;
+    margin-top: 8.5%;
+    animation: scale 1s forwards;
+}
+.us
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: -30%;
+}
+.raj
+{
+    position: absolute;
+    font-size: 5.5rem;
+    margin-left: 14%;
+    margin-top: -5%;
+    font-family: 'tangerine',cursive;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 1s;
+}
+.cone
+{
+    position: absolute;
+    font-size: 5.5rem;
+    margin-left: 15%;
+    margin-top: -5%;
+    font-family: 'tangerine',cursive;
+    animation: navLinkFade 1s forwards;
+    animation-delay: 1s;
+}
+.meet-rectangle
+{
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 600px;
+    width: 90%;
+    background-color: var(--white);
+    border: 7px solid var(--box1);
+}
+/*-------------------------------------------------------- meet our team --------------------------------------*/
+
+
+
+
+
+
+ /* ---------------------------------------------------------feedback.html -------------------------------------*/
+.feedback-rectangle
+{
+    position: center;
+    height: 1000px;
+    width:700px;
+    margin-top: 30%;
+    border: 5px solid var(--box1);
+    background-color: var(--white);
+    box-shadow: -3px 5px 25px  var(--box);
+    margin-left: 22%;
+    -moz-box-shadow:    0 0 20px var(--circle2)  ;
+    -webkit-box-shadow:  0 0 20px  var(--circle2);
+    box-shadow:          0 0 20px  var(--circle2);
+}
+
+.feedback{
+    margin-top: -200px;
+}
+.content2
+ {
+     margin-top:-53rem;
+     
+     margin-left: 400px;
+ }
+
+ .feedback-heading{
+    font-size: 6rem;
+    color: black;
+    cursor: pointer;
+    font-family: 'tangerine', cursive;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: -50%;
+    text-shadow: 10px 10px 8px gray;
+    margin-top: -2%;
+    animation: fadeUp 1s forwards;
+ }   
+
+label {    
+    font-family: 'Cabin', sans-serif;
+    color: var(--circle1);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    animation: navLinkFade1 1s forwards;
+    animation-delay: 1s;
+  }    
+.row   
+{
+    padding-bottom: 40px;
+    margin-left: 5%;
+}
+
+textarea{
+    text-align: center;
+    font-style: italic;
+    color: var(--circle1);
+    font-weight: bold;
+    float: none;
+    width: 60%;
+    border-radius: 15px;
+    height: 30px;
+    border-width: 0;
+    background-color: #E4E4E4;
+    box-shadow: 5px 5px 5px #AAAAAA;
+    outline: none;
+    animation: navLinkFade 1s forwards;
+    animation-delay: 2s;
+}
+textarea:focus{
+    box-shadow: 5px 5px 25px var(--box1) ;
+}
+textarea::placeholder
+{
+   padding-top: 5rem;
+    margin-top: 10%;
+    font-size: 1rem;
+}
+
+  .col-25 {    
+    float: centre;    
+    width: 10%;    
+    margin-top: 6px;    
+  }    
+      
+  .col-75 {    
+    float: centre;    
+    width: 75%;    
+    margin-top: 6px;    
+  }    
+      
+  /* Clear floats after the columns */    
+  .row:after {    
+    content: "";    
+    display: table;    
+    clear: both;    
+  }    
+  .feedback-submit
+  {
+      width: 200px;
+      height: 50px;
+      background-color: var(--box1);
+      border-radius: 20px;
+      border: none;
+      margin-top: 5%;
+      margin-left: 10%;
+      text-align: center;
+  }
+  .feedback-submit:hover
+  {
+    background: transparent;
+    border: 5px solid var(--box1);
+  }
+  .feedback-submit a
+  {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-top: -1%;
+    margin-left: -3.5%;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .feedback-submit a:hover
+  {
+    color: var(--black);
+  }
+
+ /* ------------------------------------------------feedback.html --------------------------------------------*/
+
+
+
+
+
+
+/* ---------------------------------------------media query ------------------------------------------------------- */
+
+@media screen and (max-width:768px){
+
+
+/*----------------------------------------- navigation--------------------------------------------------- */
+    body
+    {
+        overflow-x: hidden;
+    }
+    nav
+    {
+        height: 9rem;
+    }
+    .nav-links
+    {
+        position: absolute;
+        right: 0px;
+        height: 620px;
+        top: 8vh;
+        margin-top: 7%;
+        background-color: var(--rectangle);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1500;
+        width: 40%;
+    }
+    .nav-links a
+    {
+        color: var(--white);
+        font-size: 2rem;
+    }
+    .heart1 a
+    {
+        font-size: 3rem;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .heart1
+    {
+        display: none;
+    }
+    .wishlist1
+    {
+        font-size: 3rem;
+        z-index: 1;
+        margin-top: 2.3%;
+    }
+    .wishlist
+    {
+        display: block;
+    }
+    .cart
+    {
+        display: none;
+    }
+    .cart1
+    {
+        font-size: 3rem;
+        margin-top: 2.3%;
+    }
+    .shopping
+    {
+        display: block;
+       
+    }
+    .bar
+    {
+        font-size: 3rem;
+        margin-top: 2.3%;
+    }
+    .burger
+    {
+        display: block;
+    }
+  
+
+/*-----------x--------------------------------------- navigation----------------------------x-------------- */
+
+
+
+
+
+/* ------------------------------------------------login.html -------------------------------------------------*/
+
+ .rectangle-behind
+{
+    height: 2500px;
+}
+.login1{
+    height: 900px;
+    margin-top: 45%;
+}
+.rectangle-white
+{
+    margin-top: 53%;
+    height: 700px;
+    width: 50%;
+    margin-left: 30%;
+}
+.login-heading
+{
+    font-size: 9rem;
+    margin-top: 5%;
+}
+.Title1
+{
+    
+    font-size: 2.3rem;
+    margin-top: -1%;
+    
+}
+.Title2
+{
+    font-size: 2.3rem;
+    margin-top: 8%;
+}
+.Title3
+{
+   font-size: 2.3rem;
+}
+input{
+   width: 60%;
+    height: 50px;
+    border-radius: 40px;
+}
+input::placeholder
+{
+    font-size: 1.5rem;
+}
+.text1
+{
+    position: absolute;
+   margin-top: -8%;
+   margin-left: -22%;
+}
+.text2
+{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: -22%;
+}
+.text3
+{
+    position: absolute;
+    margin-top: -18%;
+    margin-left: -22%;
+}
+.login-button
+{
+   
+    width: 270px;
+    height: 60px;
+    border: none;
+    margin-top: 24%;
+    
+}
+.login-button a
+{
+    font-size: 2.3rem;
+}
+.Not_Registered
+{
+    position: absolute;
+    margin-left: -47%;
+    margin-top: -13%;
+    font-size: 2rem;
+}
+.Register
+{
+    width: 270px;
+    height: 60px;
+    margin-left: -100%;
+    margin-top: -9%;
+  
+}
+.Register a
+{
+   font-size: 2.3rem;
+}
+/* -----------------------------------------------x--------login.html -----------------x-----------------------*/
+
+
+
+
+
+/*-------------------------- -----------------------------meet our team--------------------------------------- */
+   .splash
+   {
+       width: 70%;
+   }
+    .contact-logo1
+    {
+       width: 33%;
+        margin-left: -51%;
+        margin-top: 13%;
+    }
+    .contact-logo2
+    {
+       width: 33%;
+       margin-left: -51%;
+       margin-top: 10%;
+    }
+
+    .us
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 2%;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+    .raj
+    {
+        position: absolute;
+        font-size: 7.5rem;
+        margin-left: 35%;
+        margin-top: -10%;
+        font-family: 'tangerine',cursive;
+    }
+    .cone
+    {
+        font-size: 7.5rem;
+        margin-left: 35%;
+        margin-top: -2%;
+        font-family: 'tangerine',cursive;
+    }
+    .meet-rectangle
+{
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 1700px;
+    width: 90%;
+    background-color: var(--white);
+    border: 7px solid var(--box1);
+}
+/* ----------------------------------------x---------------meet our team---------------------------x------------ */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------feedback.html ------------------------------------*/
+      .feedback-rectangle
+      {
+          height: 1500px;
+          width:900px;
+         margin-left: 13.5%;
+         border: 10px solid var(--box1);
+      }
+      
+ 
+       .feedback-heading{
+           position: absolute;
+          font-size: 9rem;
+          color: black;
+          cursor: pointer;
+          margin-top: -42%;
+          margin-left: -8%;
+       }   
+       input{
+       
+        width: 60%;
+        border-radius: 30px;
+        height: 60px;
+        text-align: center;
+    }
+    input::placeholder
+    {
+        font-size: 2rem;
+    }
+      label {    
+          font-size: 3rem;
+          font-weight: bolder;
+        }   
+
+      .row   
+      {
+          padding-bottom: 40px;
+          margin-left: 5%;
+        
+      }
+      
+      textarea{
+         
+          width: 60%;
+          border-radius: 15px;
+          height: 50px;
+      }
+
+      textarea::placeholder
+      {
+         padding-top: 5rem;
+          margin-top: 10%;
+          font-size: 2.5rem;
+      }
+      
+        .col-25 {    
+          float: centre;    
+          width: 70%;    
+         }    
+    .firstN
+    {
+        position: absolute;
+        margin-top:-23%;
+        margin-left:-14%;
+    }  
+    .fnameI
+    {
+        position: absolute;
+        margin-top: -17%;
+        margin-left: -15%;
+    }
+    .lastN
+    {
+        position: absolute;
+        margin-top:-12%;
+        margin-left:-14%;
+    }  
+    .lnameI
+    {
+        position: absolute;
+        margin-top: -7%;
+        margin-left: -15%;
+    }
+    .yemail
+    {
+        position: absolute;
+        margin-top:-2%;
+        margin-left:-14%;
+    }  
+    .emailI
+    {
+        position: absolute;
+        margin-top: 3%;
+        margin-left: -15%;
+    }
+    .feed
+    {
+        position: absolute;
+        margin-top:9%;
+        margin-left:-14%;
+    }  
+    .feedI
+    {
+        position: absolute;
+        margin-top: 14%;
+        margin-left: -15%;
+    }
+    .feedback-submit
+        {
+            width: 400px;
+            height: 90px;
+            border-radius: 50px;
+            margin-top: 59%;
+            margin-left: 0%;
+        }
+        .feedback-submit:hover
+        {
+          background: transparent;
+          border: 8px solid var(--box1);
+        }
+        .feedback-submit a
+        {
+            position: absolute;
+            top: 1180px;
+            font-size: 3rem;
+            margin-left: -7%;
+        }
+
+/* --------------------------------------------------------feedback.html --------------------------------------*/
+
+
+
+
+
+
+/*---------------------------------------------------------- contact us ----------------------------------------*/
+
+       .main
+       {
+           margin-bottom: -20%;
+       }
+       .contact-rectangle
+       {
+           
+           height: 1150px;
+           width: 900px;
+           margin-left:13%;
+           margin-top: 10%;
+           border: 7px solid var(--explorebtn);
+       }
+       
+       .content
+       {
+           margin-top: -45rem;
+           text-align: center;
+       }
+       
+       .contact-us
+       {
+           position: absolute;
+           font-size: 5.5rem;
+           margin-top: -35%;
+           margin-left: -4%;
+       }
+       .main-content
+       {
+          position: absolute;
+           font-size: 5rem;
+           margin-left: -6%;
+           margin-top: -10%;
+       }
+       .gmail
+       {
+           font-size: 5.5rem;
+           margin-top: 2rem;
+       }
+       .gmail:hover
+       {
+         font-size: 6rem;    
+       }
+       
+       .contact1
+       {
+           font-size: 3.5rem;
+           margin-top: 0.2rem;
+       }
+       .contact1:hover{
+           font-style: italic;
+         
+       }
+       .call
+       {
+           color: var(--box1);
+           font-size: 5.5rem;
+           margin-top: 2rem;
+       }
+       
+       .call:hover
+       {
+         font-size: 6rem;    
+       }
+       .number
+         {
+           font-size: 3.5rem;
+           color: var(--box3);
+         }
+
+         .social-icons
+         {
+           
+            margin-top: 3rem;
+            font-size: 5.5rem;
+            margin-left: 2rem;
+         }
+       
+         .social-icons:hover
+         {
+             font-size: 6rem;
+         }
+
+/*------------------------------------------------------- contact us ---------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------- about us----------------------------------------------- */
+
+.about-rectangle
+{
+   
+    height: 1150px;
+    width: 900px;
+    margin-left:13%;
+    margin-top: 10%;
+    border: 10px solid var(--explorebtn);
+    margin-bottom: 20%;
+}
+.about-content
+{
+    margin-top:-84rem;
+    text-align: center;
+}
+.about-us
+{
+    font-size: 5.5rem;
+}
+.about-main-content
+{
+    font-size: 3.3rem;
+}
+/*-------------------------------------------------------- about us--------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------footer -------------------------------------------------*/
+
+.footer2
+{
+    margin-top: 70%;
+    height: 600px;
+}
+
+.icons
+{
+    font-size: 3.5rem;
+    margin-left: 5%;
+}
+.name2
+{
+    font-size: 10rem;
+    margin-left: -20%;
+}
+.Grey
+{
+    font-size: 2.7rem;
+    margin-top: 21%;
+    margin-left: -25%;
+}
+
+.meetfeedback a
+{
+    font-size: 2.4rem;
+    margin-left: -23%;
+    margin-top: 28%;
+}
+.feedback a
+{
+margin-top: 35%;
+}
+
+/* ------------x------------------------------------footer -------------x-----------------------------------*/
+
+
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+/* ----------------------------------------------animations --------------------------------------------------*/
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+@keyframes navLinkFade1{
+    from{
+        opacity:0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeUp {
+    0% {
+      
+        transform: translateY(100%);
+    }
+    100% {
+        
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown1 {
+    0% {
+      
+        transform: translateY(-100%);
+    }
+    100% {
+        
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale {
+    0% {
+      
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes grow {
+    0% {
+      
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+       width: 25%;
+    }
+}
+@keyframes fadeDown {
+    0% {
+      
+        transform: translateY(100%);
+    }
+    100% {
+        
+        transform: translateY(0);
+    }
+}
+@keyframes animate1 {
+    0% {
+      
+        transform: translateX(-100%);
+    }
+    100% {
+        
+        transform: translateX(100%);
+    }
+}
+@keyframes animate2 {
+    0% {
+      
+        transform: translateY(-100%);
+    }
+    100% {
+        
+        transform: translateY(100%);
+    }
+}
+@keyframes animate3 {
+    0% {
+      
+        transform: translateX(100%);
+    }
+    100% {
+        
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate4 {
+    0% {
+      
+        transform: translateY(100%);
+    }
+    100% {
+        
+        transform: translateY(-100%);
+    }
+}
+
